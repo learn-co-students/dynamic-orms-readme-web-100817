@@ -1,7 +1,10 @@
+require 'pryl'
 require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class Song
+
+
 
 
   def self.table_name
@@ -59,6 +62,3 @@ class Song
   end
 
 end
-
-
-
