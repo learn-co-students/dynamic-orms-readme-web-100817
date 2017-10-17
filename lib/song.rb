@@ -54,11 +54,8 @@ class Song
   end
 
   def self.find_by_name(name)
-    sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
-    DB[:conn].execute(sql)
+    squeel = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
+    DB[:conn].execute(squeel)
   end
 
 end
-
-
-
